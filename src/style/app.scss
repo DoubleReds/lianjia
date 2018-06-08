@@ -1,0 +1,313 @@
+@import "./usage/core/reset";
+@import "./common";
+
+// *{
+//     box-sizing: border-box;
+// }
+body{
+    font-size: .875rem;
+    /* overflow:hidden; */
+    overflow-y:hidden;
+    .wrapper{
+    
+        height: 100%;
+        overflow: scroll;
+        background: #f5f5f5;
+         /*头部*/
+
+       
+        .header{
+            
+            height:100%;
+             /*头部1*/
+            .download{
+                margin:.9375rem;
+                background-color:#fff;
+                border-radius:.875rem;
+                padding:1rem;
+                box-shadow:0 5px 10px rgba(0,0,0,.15); 
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                .header-left{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .download_logo{
+                        width:3.125rem;
+                        height:3.125rem;
+                        .download_logo img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                    .download_mid{
+                    
+                        padding: .3125rem 1rem;
+                        .download_title{
+                            font-size:1rem;
+                            color:#394043;
+                            line-height:1;
+                            margin-top:.125rem;
+                        }
+                        .download_sub{
+                            font-size:.6875rem;
+                            color:#9c9fa1;
+                            line-height:1;
+                            margin-top:.5625rem;
+                        }
+                    }
+                }
+                .download_btn{
+                    width:5.3125rem;
+                    height:2rem;
+                    line-height:2rem;
+                    background-color:#00ae66;
+                    color:#fff;
+                    border-radius: 0.1rem;
+                    font-size:.875rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+            /*头部2*/
+            .download_top{
+
+            }  
+                /*头部3*/
+            .home_header{
+                width: 100%;
+                height: 14.0625rem;
+                background: url(image/head_bg.jpg);
+                background-size: cover;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                 img{
+                    width:100%;
+                    height: 100%;
+                }
+                .home_header_top{
+                    .font_picture2{
+                        font-family: 'iconfont';
+                        color:#fff;
+                        font-size: 1.2rem;
+                        
+                        background-size:1.8rem;
+                        
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    height: 2.8125rem;
+                    line-height: 2.8125rem;
+                    padding: 0 .25rem 0 .9375rem;
+                    
+                    display: flex;
+                    align-items: center;  
+                    justify-content: space-between; 
+                    .font_picture1{
+                        .font_picture1 span{
+                            display: inline-flex;
+                            padding: 0  .5rem;
+                            height: 1.5rem;
+                            line-height:1.5rem;
+                            background: rgba(0,0,0,.5);
+                            border-radius:.75rem;
+                            justify-content: center;
+                            align-items: center;
+                            .city{
+                                color:#fff;
+                            }
+                            .font_picture1 span i{
+                                font-family: 'iconfont';
+                                color:#fff;
+                                font-size: 1.2rem;
+                                margin-top: 0.5rem;
+                            }
+                        }
+                    } 
+
+                } 
+                @font-face {
+                    font-family: 'iconfont';
+                    src: url('iconfont.eot');
+                    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+                    url('iconfont.woff') format('woff'),
+                    url('iconfont.ttf') format('truetype'),
+                    url('iconfont.svg#iconfont') format('svg');
+                }
+                .home_header_content{
+                    flex: 1;
+                    margin: 2rem auto 0;
+                    .slogn{
+                        width: 12.625rem;
+                        height: 3.875rem;
+                        background: url(https://s1.ljcdn.com/hulk-web/static/m/images/home/head_slogan.png?id=201607141919&version=f1hd3g3v44)  no-repeat;
+                        background-size: 100%;
+                        margin: 0 auto;
+                        
+                            .search_box{
+                                background: #fff;
+                                margin:.75rem 0;
+                                border:0;
+                                display: flex;
+                                width: 22rem;
+                                .search_box i{
+                                    font-family: 'iconfont';
+                                    display: inline-block;
+                                    width:2.1875rem;
+                                    height: 2.1875rem; 
+                                    font-size: 1.2rem;
+                                    display: inline-flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                .search_box input{
+                                    margin-right:.125rem;
+                                    border:0;
+                                    vertical-align: top;
+                                    font-size: .875rem;
+                                    background-color:#fff;
+                                    padding:0 .5rem;
+                                    width:100%;
+                                    height:2.1875rem;
+                                } 
+                            }
+                        
+                    }
+                }
+
+            } 
+        }
+
+           
+/*主体*/
+.main_content{
+     /*频道导航*/
+     .main_nav{
+        padding: .3125rem .625rem 1.25rem;
+        border-bottom: 1px solid #e5e5e5;
+        display:flex;
+        flex-flow: wrap;
+        .box_col{
+            width:25%;
+            margin:.9375rem 0 0;
+            a{
+                display: block;
+                color: #000;
+                div{
+                    background-size: 100%;
+                   /* background: center center; */
+                   background-position: center center;
+                   &:nth-of-type(1){
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    margin:.6875rem auto;
+                    background-repeat: no-repeat;
+                    .ershoufang{
+                        background: url(https://s1.ljcdn.com/hulk-web/static/m/images/home/route_icon/ershoufang.png?version=f1jn1jhksb) center center;
+                    }
+                    .xinfang{
+                        background:url(https://s1.ljcdn.com/hulk-web/static/m/images/home/route_icon/xinfang.png?version=f1jn1jhksb) center center;
+                    }
+                    .zufang{
+                        background:url(https://s1.ljcdn.com/hulk-web/static/m/images/home/route_icon/zufang.png?version=f1jn1jhksb) center center;
+                    }
+                    .maifang{
+                        background: url(https://s1.ljcdn.com/hulk-web/static/m/images/home/route_icon/maifang.png?version=f1jn1jhksb) center center;
+                    }
+                    .lvju{
+                        background: url(https://s1.ljcdn.com/hulk-web/static/m/images/home/route_icon/lvju.png?version=f1jn1jhksb) center center;
+                    }
+                    .haiwai{
+                        background: url(https://s1.ljcdn.com/hulk-web/static/m/images/home/route_icon/haiwai.png?version=f1jn1jhksb) center center;
+                    }
+                    .chachengjiao{
+                        background: url(https://s1.ljcdn.com/hulk-web/static/m/images/home/route_icon/chengjiao.png?version=f1jn1jhksb) center center;
+                    }
+                    .zhaoxiaoqu{
+                        background: url(https://s1.ljcdn.com/hulk-web/static/m/images/home/route_icon/xiaoqu.png?version=f1jn1jhksb) center center;
+                    }
+
+                }
+    /*宽高随便给的，原本都是2，字体大小也是随便给的*/
+                    &:nth-of-type(2){
+                        margin-top:0;
+                        color: #222;
+                        text-align: center;
+                        font-weight: normal;
+                        font-size: 0.9rem;
+                    }
+                   
+                }
+            }
+        }
+    }
+ /*常用工具*/
+ .main_bool{
+    padding:0 0 0 1.25rem;
+    margin-top: .75rem;
+    background-color: #fff;
+    border-top:1px solid #e5e5e5;
+    border-bootom:1px soild #e5e5e5;
+    .main_bool_box{
+        height: 100%;
+        dt{
+            height: 3.4375rem;
+            line-height: 3.4375rem;
+            border-bottom: 1px solid #e5e5e5;
+            a{
+                display:block;
+                color:#333;
+                font-size: 1rem;
+                font-weight:600px;
+            }
+        }
+        dd{
+            margin-left:-1.2rem;
+            padding:1.25rem 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            a{
+                display: block;
+                width:20%;
+                text-align:center;
+                margin-bottom:1.25rem;
+                /* border: 1px solid red; */
+                span{
+                    display:inline-block;
+                    width: 2rem;
+                    height: 2rem;
+                    margin: 0 auto;
+                    background-repeat:no-repeat;
+                    background:url(https://s1.ljcdn.com/hulk-web/static/m/images/home/sprite.svg?id=201707201730007&version=f1jn1jhksb) no-repeat;
+                    background-position: 0 -53.5rem;
+                }
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color:black;
+                }
+                
+            }
+        }
+    }
+}
+.main_houselist{
+
+}
+
+}
+ 
+        /*尾部*/
+        .footer{
+
+        }
+
+    }         
+}
+        
+       
